@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="23.049" tests="2" skipped="0" failures="1" errors="0">
+<testcase classname="Verify the Login functionlaity of 3i-Bank" name="Login functionality of 3i-Bank page" time="17.459">
+<failure type="org.openqa.selenium.ElementNotInteractableException" message="element not interactable
+  (Session info: chrome=121.0.6167.185)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6b187531f223c138a7faaac7322e2f1b, sendKeysToElement {id=BD189BC3C3A3D93C959EBEF135FDC63F_element_93, value=[Ljava.lang.CharSequence;@39ad12b6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\1002646\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56612}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56612/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6b187531f223c138a7faaac7322e2f1b)] -&gt; xpath: (//div[@id='nav-step2']/div/div/input)[1]]
+Session ID: 6b187531f223c138a7faaac7322e2f1b">
+<![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=121.0.6167.185)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6b187531f223c138a7faaac7322e2f1b, sendKeysToElement {id=BD189BC3C3A3D93C959EBEF135FDC63F_element_93, value=[Ljava.lang.CharSequence;@39ad12b6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\1002646\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56612}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56612/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6b187531f223c138a7faaac7322e2f1b)] -> xpath: (//div[@id='nav-step2']/div/div/input)[1]]
+Session ID: 6b187531f223c138a7faaac7322e2f1b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+	at pages.EmploymentDetails.empdetails(EmploymentDetails.java:32)
+	at stepDefinition.BankLogin4Test.user_give_the_inputs_for_emp_details_employer_employers_phone_employement_status_how_oftenareyoupaid_last_pay_date_next_pay_date_last_take_home_pay_cheque_amount_take_home_for_the_month_of_may(BankLogin4Test.java:93)
+	at ✽.User give the inputs for emp details Employer,EmployersPhone,EmployementStatus,HowOftenareyoupaid,LastPayDate,NextPayDate,LastTakeHomePayChequeAmount,TakeHomeForTheMonthOfMay(file:///C:/Users/1002646/eclipse-workspace/CucumberFramework/src/test/resources/features/3i-BankLogin4.feature:17)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User able to navigate Login screen....................................passed
+And User enter the inputs as username,password and creditcard...............passed
+When User clcik on login button.............................................passed
+Then User verify the home page..............................................passed
+And User click on ApplyNow button...........................................passed
+Then User redirect to PICRA screen..........................................passed
+And User click on agree and agree continue button...........................passed
+Then User navigate to personal detail tab...................................passed
+And User give the inputs forFirstName,LastName,DateOfBirth,PANNumber,MobileNumber,Email.passed
+When User click on save and submitt the all details.........................passed
+Then User redirect to the Employment details tab............................passed
+And User give the inputs for emp details Employer,EmployersPhone,EmployementStatus,HowOftenareyoupaid,LastPayDate,NextPayDate,LastTakeHomePayChequeAmount,TakeHomeForTheMonthOfMay.failed
+]]></system-out>
+</testcase>
+<testcase classname="Verify the Login functionlITY" name="Login functionality of the 3i-Bank Application" time="5.228">
+<system-out><![CDATA[
+Given User navigate to 3i-Bank..............................................passed
+And User enter the name asusername,password and creditcard..................passed
+When User click on Login Button.............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
